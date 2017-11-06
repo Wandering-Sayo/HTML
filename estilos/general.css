@@ -1,0 +1,32 @@
+/* Comentarios css */
+
+ul {
+    list-style: none;
+}
+
+#menu{
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+}
+
+#menu li{
+    display: inline-block;
+    
+}
+
+#menu a:visited{
+    color: aquamarine;
+}
+
+.sinopsis{
+    font-size: 16px;
+}
+
+.sinopsis.principal{
+    color: red;
+}
+
