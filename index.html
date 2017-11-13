@@ -4,51 +4,106 @@
 <head>
     <!-- Comentarios bitches -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Series - Principal</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Incluir archivo CSS-->
-    <link  rel="stylesheet" href="estilos/general.css">
+    <link  rel="stylesheet" href="css/general.css">
 </head>
 
 <body>
 
-    <h1>Series</h1>
-
-    <p>En esta aplicación vamos a hablar de series.</p>
-
-    <h2>Menu</h2>
-
-    <ul id="menu">
-        <li>Acción</li>
-        <li>Ciencia Ficción</li>
-        <li>Drama</li>
-        <li><a href="contacto.html">Contacto</a></li>
-
-    </ul>
-
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#seccion-colapsable" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Series</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="seccion-colapsable">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span></a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listado <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Ciencia Ficción</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Documentales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
     <h2>Series de Ciencia Ficción</h2>
 
-    <div class="serie">
-        <h3>Stranger Things</h3>
-        <img height="300" width="500" src="https://cdn2.cnet.com/img/kLXrhL1fkTb05OHrWj3NueOntCM=/770x433/2016/08/17/c2774efc-a76e-4ccc-b531-956b38cf91d6/stranger-things-1.jpg"/>
-        <div class="resumen">
-            <p class="sinopsis principal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl ac purus rhoncus, viverra luctus eros congue. Nam ultricies nulla quam, eget sollicitudin ex dictum in. Etiam id justo odio. Maecenas vel dictum ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc gravida enim in sem tempor molestie. Phasellus et pretium nunc. Pellentesque nec venenatis ligula. Aliquam eu volutpat felis. Nulla quam diam, sodales vitae convallis lobortis, consequat non sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque iaculis efficitur ipsum, ut pharetra sem consequat ut. Curabitur maximus felis sit amet purus volutpat vehicula. Mauris quis nibh dictum, congue ligula ac, convallis nunc. Phasellus fringilla quam vitae metus tempor scelerisque.</p>
+    <div class="col-md-6">
+        <div class="col-md-4">
+            <img class="img-responsive" height="300" width="500" src="https://cdn2.cnet.com/img/kLXrhL1fkTb05OHrWj3NueOntCM=/770x433/2016/08/17/c2774efc-a76e-4ccc-b531-956b38cf91d6/stranger-things-1.jpg"/>
+        </div>
+        <div class="col-md-8">
+            <h3>Stranger Things</h3>
+            <p class="sinopsis principal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl ac purus rhoncus, viverra luctus eros congue. Nam ultricies nulla quam, eget sollicitudin ex dictum in. Etiam id justo odio. Maecenas vel dictum ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc gravida enim in sem tempor molestie. </p>
             <a href="https://www.netflix.com/us-es/title/80057281" target="_blank">Ver sitio oficial</a>
+        </div>
+        <ul>
+                <li>Elemento1</li>
+                <li>Elemento2</li>
+                <li>Elemento3</li>
+                <li>Elemento4</li>
+        </ul>
+    </div>
+
+    
+
+    <div class="col-md-6">
+        <div class="col-md-4">
+            <img class="img-responsive" height="300" width="600" src="https://occ-0-2433-448.1.nflxso.net/art/6f985/133c2ce3415362d6df11b3fad64f4fcdb286f985.jpg"/>
+        </div>
+        <div class="col-md-8">
+        <h3>Black Mirror</h3>
+        <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl ac purus rhoncus, viverra luctus eros congue. Nam ultricies nulla quam, eget sollicitudin ex dictum in. Etiam id justo odio. Maecenas vel dictum ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc gravida enim in sem tempor molestie. </p>
+        <a href="https://www.netflix.com/us-es/title/70264888" target="_blank">Ver sitio oficial</a>
         </div>
     </div>
 
-    <ul>
-        <li>Elemento1</li>
-        <li>Elemento2</li>
-        <li>Elemento3</li>
-        <li>Elemento4</li>
-    </ul>
+    <div class="col-md-6">
+            <div class="col-md-4">
+                <img class="img-responsive" height="300" width="600" src="http://4.bp.blogspot.com/-kaB4CY-ysro/TchdLNW1Z1I/AAAAAAAAATk/4YmM7X8YTGM/w1200-h630-p-k-no-nu/fringe_logo.jpg"/>
+            </div>
+            <div class="col-md-8">
+            <h3>Fringe</h3>
+            <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl ac purus rhoncus, viverra luctus eros congue. Nam ultricies nulla quam, eget sollicitudin ex dictum in. Etiam id justo odio. Maecenas vel dictum ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc gravida enim in sem tempor molestie. </p>
+            <a href="https://www.netflix.com/us-es/title/70264888" target="_blank">Ver sitio oficial</a>
+            </div>
+        </div>
 
-    <h3>Black Mirror</h3>
-    <img height="300" width="600" src="https://occ-0-2433-448.1.nflxso.net/art/6f985/133c2ce3415362d6df11b3fad64f4fcdb286f985.jpg"/>
-    <p class="sinopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl ac purus rhoncus, viverra luctus eros congue. Nam ultricies nulla quam, eget sollicitudin ex dictum in. Etiam id justo odio. Maecenas vel dictum ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc gravida enim in sem tempor molestie. Phasellus et pretium nunc. Pellentesque nec venenatis ligula. Aliquam eu volutpat felis. Nulla quam diam, sodales vitae convallis lobortis, consequat non sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque iaculis efficitur ipsum, ut pharetra sem consequat ut. Curabitur maximus felis sit amet purus volutpat vehicula. Mauris quis nibh dictum, congue ligula ac, convallis nunc. Phasellus fringilla quam vitae metus tempor scelerisque.</p>
-    <a href="https://www.netflix.com/us-es/title/70264888" target="_blank">Ver sitio oficial</a>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
